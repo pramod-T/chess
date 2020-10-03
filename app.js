@@ -110,7 +110,7 @@ function move(numberOfSteps, dir) {
             break;
 
         default:
-            document.write("invalid input")
+            document.write("invalid input");
     }
 }
 
@@ -122,5 +122,6 @@ function play() {
         let dir = num.slice(0, num.length - 1);
         move(number, dir);
     });
+    document.write("queens current position->" + board[queen.position.x][queen.position.y]);
     console.log("queens current position->" + board[queen.position.x][queen.position.y]);
 }
